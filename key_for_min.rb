@@ -3,13 +3,13 @@
 
 def key_for_min_value(name_hash)
   homeruns = {:bonds => 73, :mcgwire => 70, :sosa => 68}
-  low_key = nil
-  low_value = nil
-    hash.each do |key, value|
-      if low_value == nil || value < lowest_value
-        low_value = value
-        low_key = key
+  low_man = nil
+  low_total = nil
+    hash.each do |man, total|
+      if low_total == nil || total < low_total
+        low_total = total
+        low_man = man
       end
     end
-    low_key
+    low_man
   end
